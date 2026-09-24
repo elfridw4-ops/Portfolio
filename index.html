@@ -96,7 +96,12 @@
 <header>
   <nav class="wrap" aria-label="Navigation principale">
     <a href="#main" class="brand">
-      <span class="mark" aria-hidden="true"><span>H</span></span>
+      <span class="mark" aria-hidden="true">
+        <svg class="mark-draw" viewBox="0 0 26 26" focusable="false">
+          <rect x="1.75" y="1.75" width="22.5" height="22.5" rx="1.5"></rect>
+        </svg>
+        <span>H</span>
+      </span>
       HG PROMPT
     </a>
     <ul class="nav-links">
@@ -106,7 +111,21 @@
       <li><a href="#trame">Trame</a></li>
     </ul>
     <a class="nav-cta" href="https://trame-beta.vercel.app" target="_blank" rel="noopener">Cadrer un projet</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
   </nav>
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <div class="wrap">
+      <ul class="mobile-links">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#trame">Trame</a></li>
+      </ul>
+      <a class="mobile-menu-cta" href="https://trame-beta.vercel.app" target="_blank" rel="noopener">Cadrer un projet ↗</a>
+    </div>
+  </div>
 </header>
 
 <main id="main">

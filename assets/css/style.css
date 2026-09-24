@@ -78,19 +78,27 @@ img{max-width:100%; display:block;}
 header{
   position:sticky; top:0; z-index:20;
   background:rgba(10,10,10,0.86); backdrop-filter:blur(10px) saturate(1.1);
-  border-bottom:1px solid var(--line);
+  border-bottom:1px solid var(--line); transition:background .2s ease, border-color .2s ease, box-shadow .2s ease;
 }
 @supports not (backdrop-filter: blur(1px)){ header{ background:rgba(10,10,10,0.98); } }
+header.is-scrolled{ background:rgba(10,10,10,0.96); border-color:var(--line-strong); box-shadow:0 10px 28px rgba(0,0,0,.22); }
 header nav{ display:flex; align-items:center; justify-content:space-between; padding:18px 0; }
 .brand{
   font-family:var(--font-mono); font-weight:700; font-size:15px; letter-spacing:1px;
   text-decoration:none; display:flex; align-items:center; gap:10px;
 }
 .brand .mark{
-  width:26px; height:26px; border:1.5px solid var(--text-dim); border-radius:var(--radius);
-  display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--text);
+  position:relative; width:26px; height:26px; display:flex; align-items:center; justify-content:center;
+  font-size:12px; color:var(--text);
   transform:rotate(45deg);
 }
+.mark-draw{
+  position:absolute; inset:0; width:100%; height:100%; overflow:visible;
+  fill:none; stroke:var(--text-dim); stroke-width:1.5; stroke-linecap:round;
+  stroke-dasharray:92; stroke-dashoffset:92;
+  animation:mark-line-draw .75s cubic-bezier(0.16, 1, 0.3, 1) .25s forwards;
+}
+@keyframes mark-line-draw{ to{ stroke-dashoffset:0; } }
 .brand .mark span{ transform:rotate(-45deg); }
 .nav-links{ display:flex; gap:32px; list-style:none; }
 .nav-links a{
@@ -106,7 +114,19 @@ header nav{ display:flex; align-items:center; justify-content:space-between; pad
 }
 .nav-cta:hover{ filter:brightness(0.85); }
 .nav-cta:active{ transform:scale(0.97); }
-@media (max-width:760px){ .nav-links{ display:none; } }
+.menu-toggle{ display:none; width:44px; height:44px; padding:0; border:1px solid var(--line-strong); border-radius:var(--radius); background:transparent; color:var(--text); cursor:pointer; }
+.menu-toggle span{ display:block; width:16px; height:1px; margin:4px auto; background:currentColor; transition:transform .18s ease, opacity .18s ease; }
+.menu-toggle[aria-expanded="true"] span:first-child{ transform:translateY(2.5px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] span:last-child{ transform:translateY(-2.5px) rotate(-45deg); }
+.mobile-menu{ border-top:1px solid var(--line); padding:12px 0 20px; }
+.mobile-links{ list-style:none; display:grid; gap:2px; }
+.mobile-links a, .mobile-menu-cta{ display:block; padding:13px 0; font-size:13px; letter-spacing:1px; text-transform:uppercase; text-decoration:none; }
+.mobile-links a{ color:var(--text-dim); }
+.mobile-menu-cta{ color:var(--text); border-top:1px solid var(--line); margin-top:8px; }
+@media (max-width:760px){
+  .nav-links, header .nav-cta{ display:none; }
+  .menu-toggle{ display:block; }
+}
 
 /* Retour visuel renforcé pour les liens et actions utilisés au clavier. */
 .nav-links a:focus-visible,
@@ -297,6 +317,9 @@ section{ position:relative; z-index:1; padding:72px 0; }
   border-left:2px solid var(--line-strong); padding-left:14px;
 }
 
+/* Les cartes hors écran peuvent être peintes plus tard sans changer leur géométrie. */
+.mini-card, .flagship-card{ content-visibility:auto; contain-intrinsic-size:420px; }
+
 /* ============================== TRAME CTA ============================== */
 .trame{
   border:1px solid var(--line-strong); border-radius:var(--radius);
@@ -327,3 +350,19 @@ footer{ position:relative; z-index:1; border-top:1px solid var(--line); padding:
 .social-link:hover{ border-color:var(--text) !important; }
 .social-link:active{ transform:scale(0.97); }
 .footer-meta{ font-size:12px; color:var(--text-faint); }
+
+@media (max-width:760px){
+  .wrap{ padding-left:20px; padding-right:20px; }
+  body{ font-size:16px; }
+  .hero{ padding-top:42px; }
+  .hero-status, .hero-honest, .about-grid p, .trame-copy p{ font-size:15px; }
+  .btn{ min-height:46px; }
+  .footer-links{ gap:12px 18px; }
+  .footer-meta{ width:100%; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  header{ transition:none; }
+  .menu-toggle span{ transition:none; }
+  .mark-draw{ animation:none; stroke-dashoffset:0; }
+}
