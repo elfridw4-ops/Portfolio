@@ -88,17 +88,10 @@ header nav{ display:flex; align-items:center; justify-content:space-between; pad
   text-decoration:none; display:flex; align-items:center; gap:10px;
 }
 .brand .mark{
-  position:relative; width:26px; height:26px; display:flex; align-items:center; justify-content:center;
-  font-size:12px; color:var(--text);
+  width:26px; height:26px; border:1.5px solid var(--text-dim); border-radius:var(--radius);
+  display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--text);
   transform:rotate(45deg);
 }
-.mark-draw{
-  position:absolute; inset:0; width:100%; height:100%; overflow:visible;
-  fill:none; stroke:var(--text-dim); stroke-width:1.5; stroke-linecap:round;
-  stroke-dasharray:92; stroke-dashoffset:92;
-  animation:mark-line-draw .75s cubic-bezier(0.16, 1, 0.3, 1) .25s forwards;
-}
-@keyframes mark-line-draw{ to{ stroke-dashoffset:0; } }
 .brand .mark span{ transform:rotate(-45deg); }
 .nav-links{ display:flex; gap:32px; list-style:none; }
 .nav-links a{
@@ -364,5 +357,4 @@ footer{ position:relative; z-index:1; border-top:1px solid var(--line); padding:
 @media (prefers-reduced-motion: reduce){
   header{ transition:none; }
   .menu-toggle span{ transition:none; }
-  .mark-draw{ animation:none; stroke-dashoffset:0; }
 }
