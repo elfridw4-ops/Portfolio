@@ -1,0 +1,41 @@
+# Horacio CHINKOUN — HG Prompt
+
+> Portfolio professionnel d'Horacio CHINKOUN, DEV Junior, architecte fonctionnel et orchestrateur de produits IA basé à Pahou, Bénin, opérant sous la marque HG Prompt.
+
+Horacio CHINKOUN conçoit et pilote des produits numériques propulsés par l'intelligence artificielle (SaaS, PWA, EdTech), de l'idée au prototype fonctionnel. 
+Il ne code pas lui-même chaque ligne : il cadre le besoin, rédige des spécifications précises, dirige des agents IA de développement (Claude Code, Cursor, Antigravity) par prompt engineering et audits itératifs, 
+et valide chaque livrable en conditions réelles (mobile, réseau faible).
+
+## Objectif
+
+Ce site sert de vitrine de projets réels (réalisations et démos) et de point d'entrée vers Trame, son outil de cadrage de projet client.
+
+## Services
+
+- Developpement Web
+- Cadrage fonctionnel de produit IA (cahiers des charges, spécifications)
+- Prompt engineering et pilotage d'agents IA de développement
+- Prototypage rapide (idée → MVP fonctionnel)
+- Direction artistique / identité visuelle de produits SaaS
+- Rédaction de documentation produit
+
+## Projets
+
+- [Stern Cosmétique](https://stern-cosm.vercel.app) : site e-commerce cosmétique — implication forte.
+- [MonProgrammeFit](https://monprogrammefit.vercel.app) : application de programme fitness — implication forte.
+- [Prépa Concours Bénin](https://prepa-concours-xi.vercel.app) : plateforme EdTech, tuteur IA socratique pour le Baccalauréat scientifique.
+- [NukeMap EDU](https://nukemap-3d.vercel.app) : simulateur scientifique pédagogique 3D.
+- [Mock Interview Pro](https://mock-interview-pro.ai.studio) : simulateur d'entretien d'embauche avec pipeline vocal.
+- [OrientaBénin](https://orientabenin.vercel.app) : orientation scolaire et professionnelle.
+- [Trame](https://trame-beta.vercel.app) : outil de cadrage de projet client.
+
+## Contact
+
+- Email : hgprompt.design@gmail.com
+- WhatsApp : +229 01 99 06 25 59
+- LinkedIn : https://www.linkedin.com/in/horacio-chinkoun-4509b13a4
+- GitHub : https://github.com/elfridw4-ops
+
+## Optional
+
+- Autres démos techniques (padel, voyage, restauration) listées sur la page d'accueil, sans client réel derrière — à but de démonstration uniquement.

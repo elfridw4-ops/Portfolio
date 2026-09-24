@@ -1,0 +1,15 @@
+{
+  "name": "Horacio CHINKOUN — HG Prompt",
+  "short_name": "HG Prompt",
+  "description": "Portfolio d'Horacio CHINKOUN — DEV Junior, architecte fonctionnel et orchestrateur de produits IA.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "lang": "fr",
+  "icons": [
+    { "src": "assets/img/favicon-16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "assets/img/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

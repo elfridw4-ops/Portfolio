@@ -1,0 +1,3 @@
+Contact: mailto:hgprompt.design@gmail.com
+Preferred-Languages: fr, en
+Canonical: https://horaciochinkoun.site/.well-known/security.txt
