@@ -18,6 +18,7 @@
   --font-display:'Tektur', sans-serif;
   --font-mono:'JetBrains Mono', monospace;
   --max:1180px;
+  color-scheme:dark;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -107,6 +108,16 @@ header nav{ display:flex; align-items:center; justify-content:space-between; pad
 .nav-cta:active{ transform:scale(0.97); }
 @media (max-width:760px){ .nav-links{ display:none; } }
 
+/* Retour visuel renforcé pour les liens et actions utilisés au clavier. */
+.nav-links a:focus-visible,
+.nav-cta:focus-visible,
+.btn:focus-visible,
+.card-link:focus-visible,
+.footer-links a:focus-visible{
+  outline:2px solid var(--text);
+  outline-offset:4px;
+}
+
 /* ============================== HERO ============================== */
 .hero{
   position:relative; z-index:1; padding:96px 0 84px;
@@ -175,6 +186,15 @@ section{ position:relative; z-index:1; padding:72px 0; }
 .reveal.in{ animation:fade-up .5s ease both; }
 @keyframes fade-up{ from{ opacity:0; transform:translateY(14px);} to{ opacity:1; transform:none;} }
 @media (prefers-reduced-motion: reduce){ .reveal.in{ animation:none; } }
+
+/* Désactive les transitions décoratives si l'utilisateur réduit les mouvements. */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    transition-duration:0.01ms !important;
+    animation-duration:0.01ms !important;
+    animation-iteration-count:1 !important;
+  }
+}
 
 /* ============================== MÉTHODE (séquence réelle → numérotée) ============================== */
 .method-list{ list-style:none; display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
