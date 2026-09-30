@@ -105,7 +105,10 @@ header nav{ display:flex; align-items:center; justify-content:space-between; pad
 .nav-cta:hover{ filter:brightness(0.85); }
 .nav-cta:active{ transform:scale(0.97); }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 817ea348292f950bba2ea6433fe259a88b14fd00
 
 /* ============================== NOUVEAUX EFFETS VISUELS ============================== */
 
@@ -229,7 +232,10 @@ header nav{ display:flex; align-items:center; justify-content:space-between; pad
   .lang-switcher.hidden-on-mobile{ display:none; }
 }
 
+<<<<<<< HEAD
 >>>>>>> 817ea34 (feat: ajout d'effets visuels pour les numéros de méthode et les cartes projets)
+=======
+>>>>>>> 817ea348292f950bba2ea6433fe259a88b14fd00
 .menu-toggle{ display:none; width:44px; height:44px; padding:0; border:1px solid var(--line-strong); border-radius:var(--radius); background:transparent; color:var(--text); cursor:pointer; }
 .menu-toggle span{ display:block; width:16px; height:1px; margin:4px auto; background:currentColor; transition:transform .18s ease, opacity .18s ease; }
 .menu-toggle[aria-expanded="true"] span:first-child{ transform:translateY(2.5px) rotate(45deg); }
