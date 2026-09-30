@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horacio CHINKOUN — DEV Junior, Architecte Fonctionnel & Orchestrateur de Produits IA</title>
-<meta name="description" content="Horacio CHINKOUN (HG Prompt) — DEV Junior, architecte fonctionnel et orchestrateur de produits IA basé au Bénin. Développement web, prompt engineering et direction d'agents IA de développement.">
+<title>Horacio CHINKOUN — DEV Junior, Architecte Fonctionnel & Orchestrateur de Produits IA (AP)</title>
+<meta name="description" content="Horacio CHINKOUN (HG Prompt) — DEV Junior, architecte fonctionnel et orchestrateur de produits IA (AP) basé au Bénin. Développement web, prompt engineering et direction d'agents IA de développement.">
 <link rel="canonical" href="https://horaciochinkoun.site/">
-<link rel="describedby" href="/llms.txt">
 <meta name="author" content="Horacio CHINKOUN">
 <meta name="color-scheme" content="dark">
 
@@ -40,6 +39,20 @@
 
 <link rel="stylesheet" href="assets/css/style.css">
 
+<link rel="describedby" href="/llms.txt">
+
+<style>
+  /* FAQ Accordion */
+  .faq-list { margin-top: 1.5rem; }
+  .faq-item { margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .faq-toggle { display: none; }
+  .faq-question { display: flex; align-items: center; gap: .75rem; cursor: pointer; padding: 1rem 0; font-weight: 500; font-size: 1.1rem; }
+  .faq-question::after { content: "▼"; font-size: 1.1rem; transition: transform .2s; }
+  .faq-toggle:checked + .faq-question::after { transform: rotate(180deg); }
+  .faq-answer { display: none; padding: 0 0 1rem 1.75rem; font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,.8); }
+  .faq-toggle:checked + .faq-question + .faq-answer { display: block; }
+</style>
+
 <!-- Données structurées — uniquement des informations réelles et vérifiables.
      Pas de BreadcrumbList (page unique, aucune hiérarchie de navigation à décrire)
      ni de FAQPage (aucune FAQ visible sur la page) : les ajouter serait un schema
@@ -50,7 +63,7 @@
   "@type": "Person",
   "name": "Horacio CHINKOUN",
   "alternateName": "Hora",
-  "jobTitle": "DEV Junior, Architecte fonctionnel & orchestrateur de produits IA",
+  "jobTitle": "DEV Junior, Architecte fonctionnel & orchestrateur de produits IA (AP)",
   "url": "https://horaciochinkoun.site/",
   "image": "https://horaciochinkoun.site/assets/img/portrait.jpg",
   "email": "mailto:hgprompt.design@gmail.com",
@@ -75,7 +88,78 @@
   "areaServed": "BJ"
 }
 </script>
-</head>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://horaciochinkoun.site/",
+  "name": "HG Prompt",
+  "description": "Portfolio d'Horacio CHINKOUN — Orchestrateur de produits numériques propulsés par l'IA",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://trame-beta.vercel.app",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quelle est la différence entre votre approche et un développeur classique ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Je ne remplace pas un ingénieur logiciel. Je suis architecte fonctionnel et orchestrateur d'IA : je structure le besoin, rédige des spécifications précises, oriente les choix techniques et valide chaque itération. Le code produit vous appartient et reste portable — ce n'est pas du no-code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qui possède le code final ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vous. Le code généré est votre propriété intellectuelle. Vous pouvez l'héberger où vous voulez, le modifier avec l'équipe de votre choix. Je ne retiens aucun droit sur le code livré."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que reçois-je concrètement à chaque étape ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cadrage : problème défini, public cible identifié, cahier des charges fonctionnel précis. Pilotage : prompts d'agent IA, spécifications techniques, itérations validées. Direction artistique : identité visuelle et expérience utilisateur complètes. Validation : tests en conditions réelles (mobile, réseau faible) et corrections jusqu'à conformité."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle est la différence entre vos projets phares, vos projets cadrés-réalisés-par-agent et vos démos ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Projets phares (Stern Cosmétique, MonProgrammeFit) : implication forte de ma part, suivi complet. Projets avec intention (Prépa Concours Bénin, NukeMap EDU, Mock Interview Pro) : cadrés et spécifiés par mes soins, réalisation technique par agent IA sous ma supervision. Démos techniques (W-Pendjari, Danhomè Voyages) : démonstrateurs sans client, pour illustrer des mécaniques produit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment garantissez-vous la qualité en contexte africain ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chaque itération passe par une validation systématique en conditions réelles : comportement en réseau faible, ergonomie mobile, cas de chargement lent. Je corrige jusqu'à conformité complète."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Votre offre s'adresse-t-elle uniquement à des porteurs de projets techniques ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Mon outil Trame permet de cadrer la demande avant le démarrage. Que vous soyez technique ou non, nous commençons par structurer votre besoin via Trame pour éviter les malentendus et clarifier ce que vous obtiendrez."
+      }
+    }
+  ]
+}
+</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4GS8CYS67"></script>
@@ -119,10 +203,6 @@
       <li><a href="#trame">Trame</a></li>
     </ul>
     <a class="nav-cta" href="https://trame-beta.vercel.app" target="_blank" rel="noopener">Cadrer un projet</a>
-    <div class="lang-switcher hidden-on-mobile" aria-label="Changer de langue">
-      <button class="lang-btn lang-fr" type="button" aria-label="Français" data-lang="fr">FR</button>
-      <button class="lang-btn lang-en" type="button" aria-label="English" data-lang="en">EN</button>
-    </div>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
       <span aria-hidden="true"></span><span aria-hidden="true"></span>
     </button>
@@ -135,10 +215,6 @@
         <li><a href="#methode">Méthode</a></li>
         <li><a href="#trame">Trame</a></li>
       </ul>
-      <div class="mobile-lang-switcher" aria-label="Changer de langue">
-        <button class="lang-btn lang-fr" type="button" aria-label="Français" data-lang="fr">FR</button>
-        <button class="lang-btn lang-en" type="button" aria-label="English" data-lang="en">EN</button>
-      </div>
       <a class="mobile-menu-cta" href="https://trame-beta.vercel.app" target="_blank" rel="noopener">Cadrer un projet ↗</a>
     </div>
   </div>
@@ -151,7 +227,7 @@
     <div class="hero-copy">
       <p class="eyebrow">HG Prompt / Pahou, Bénin / missions ouvertes</p>
       <h1>Je transforme<br>une <span class="signal-text">idée floue</span><br>en produit cadré.</h1>
-      <p class="hero-role">Horacio CHINKOUN — DEV Junior, architecte fonctionnel et orchestrateur de produits IA.</p>
+      <p class="hero-role">Horacio CHINKOUN — DEV Junior, architecte fonctionnel et orchestrateur de produits IA (AP).</p>
       <p class="hero-status">
         Je structure le problème, l'expérience et les décisions techniques avant de piloter la réalisation.
         Le résultat : un produit compréhensible, testable et prêt à évoluer.
@@ -240,42 +316,10 @@
         <p>Chaque étape réduit une zone d'incertitude avant de passer à la suivante.</p>
       </aside>
       <ol class="method-list">
-        <li class="is-active" aria-current="step">
-          <span class="num">
-            <svg viewBox="0 0 50 80" class="num-svg" aria-hidden="true">
-              <path d="M25 5 Q35 5 45 15 Q45 25 35 25 Q45 25 45 35 Q45 45 35 45 Q45 45 45 55 Q45 65 35 65 Q45 65 45 75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="200" stroke-dashoffset="200"/>
-            </svg>
-            <span class="num-text">01</span>
-          </span>
-          <div><h3>Cadrage</h3><p>Définition du problème, du public cible et d'un cahier des charges fonctionnel précis.</p></div>
-        </li>
-        <li>
-          <span class="num">
-            <svg viewBox="0 0 50 80" class="num-svg" aria-hidden="true">
-              <path d="M10 15 Q20 5 30 15 Q40 25 40 35 Q40 45 30 55 Q20 65 10 55 Q10 45 10 35 Q10 25 20 25 Q10 25 10 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="200" stroke-dashoffset="200"/>
-            </svg>
-            <span class="num-text">02</span>
-          </span>
-          <div><h3>Pilotage</h3><p>Prompt engineering et direction d'un agent IA de développement, par itérations et audits.</p></div>
-        </li>
-        <li>
-          <span class="num">
-            <svg viewBox="0 0 50 80" class="num-svg" aria-hidden="true">
-              <path d="M10 15 Q20 5 30 5 Q40 5 45 15 Q45 25 35 35 Q45 35 45 45 Q45 55 35 55 Q45 55 45 65 Q45 75 35 75 Q25 75 15 65 Q5 55 5 45 Q5 35 15 35 Q5 25 10 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="250" stroke-dashoffset="250"/>
-            </svg>
-            <span class="num-text">03</span>
-          </span>
-          <div><h3>Direction artistique</h3><p>Identité visuelle et expérience utilisateur définies avant la réalisation technique.</p></div>
-        </li>
-        <li>
-          <span class="num">
-            <svg viewBox="0 0 50 80" class="num-svg" aria-hidden="true">
-              <path d="M10 15 Q10 5 25 5 Q25 5 35 5 Q40 5 45 15 Q45 25 45 35 Q45 45 45 55 Q45 65 45 75 Q45 75 35 75 Q25 75 20 65 Q25 65 25 55 Q25 55 25 45 Q25 45 25 35 Q25 25 20 25 Q10 25 10 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="250" stroke-dashoffset="250"/>
-            </svg>
-            <span class="num-text">04</span>
-          </span>
-          <div><h3>Validation</h3><p>Tests en conditions réelles — mobile, réseau faible — et correction ciblée jusqu'à conformité.</p></div>
-        </li>
+        <li class="is-active" aria-current="step"><span class="num">01</span><div><h3>Cadrage</h3><p>Définition du problème, du public cible et d'un cahier des charges fonctionnel précis.</p></div></li>
+        <li><span class="num">02</span><div><h3>Pilotage</h3><p>Prompt engineering et direction d'un agent IA de développement, par itérations et audits.</p></div></li>
+        <li><span class="num">03</span><div><h3>Direction artistique</h3><p>Identité visuelle et expérience utilisateur définies avant la réalisation technique.</p></div></li>
+        <li><span class="num">04</span><div><h3>Validation</h3><p>Tests en conditions réelles — mobile, réseau faible — et correction ciblée jusqu'à conformité.</p></div></li>
       </ol>
     </div>
   </section>
@@ -376,13 +420,13 @@
       <article class="mini-card brackets">
         <div class="project-preview" aria-hidden="true">
           <div class="preview-bar"><span></span><span></span><span></span><b>mock-interview-pro</b></div>
-          <iframe src="https://mock-interview-pro-475449336443.us-west2.run.app" title="Aperçu de Mock Interview Pro" loading="lazy" tabindex="-1"></iframe>
+          <iframe src="https://mock-interview-pro.ai.studio" title="Aperçu de Mock Interview Pro" loading="lazy" tabindex="-1"></iframe>
         </div>
         <span class="tag">Intention réelle</span>
         <h3>Mock Interview Pro</h3>
         <p>Simulateur d'entretien d'embauche avec pipeline vocal interactif, scénarios d'évaluation et rapports d'analyse pour l'utilisateur.</p>
         <p class="envs">React, TypeScript, Node.js, API Gemini (voix)</p>
-        <a class="card-link" href="https://mock-interview-pro-475449336443.us-west2.run.app" target="_blank" rel="noopener">Voir la démo ↗</a>
+        <a class="card-link" href="https://mock-interview-pro.ai.studio" target="_blank" rel="noopener">Voir la démo ↗</a>
       </article>
       <article class="mini-card brackets">
         <div class="project-preview" aria-hidden="true">
@@ -513,6 +557,67 @@
     </div>
   </section>
 
+  <hr class="divider wrap">
+
+  <!-- ============================== FAQ ============================== -->
+  <section id="faq" class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">FAQ</p>
+      <h2>Questions fréquentes</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item brackets">
+        <input type="checkbox" id="faq-1" class="faq-toggle" hidden>
+        <label for="faq-1" class="faq-question">Quelle est la différence entre votre approche et un développeur classique ?</label>
+        <div class="faq-answer">
+          <p>Je ne remplace pas un ingénieur logiciel. Je suis architecte fonctionnel et orchestrateur d'IA : je structure le besoin, rédige des spécifications précises, oriente les choix techniques et valide chaque itération. Le code produit vous appartient et reste portable — ce n'est pas du no-code.</p>
+        </div>
+      </div>
+      <div class="faq-item brackets">
+        <input type="checkbox" id="faq-2" class="faq-toggle" hidden>
+        <label for="faq-2" class="faq-question">Qui possède le code final ?</label>
+        <div class="faq-answer">
+          <p>Vous. Le code généré est votre propriété intellectuelle. Vous pouvez l'héberger où vous voulez, le modifier avec l'équipe de votre choix. Je ne retiens aucun droit sur le code livré.</p>
+        </div>
+      </div>
+      <div class="faq-item brackets">
+        <input type="checkbox" id="faq-3" class="faq-toggle" hidden>
+        <label for="faq-3" class="faq-question">Que reçois-je concrètement à chaque étape ?</label>
+        <div class="faq-answer">
+          <p><strong>Cadrage</strong> : problème défini, public cible identifié, cahier des charges fonctionnel précis.<br>
+          <strong>Pilotage</strong> : prompts d'agent IA, spécifications techniques, itérations validées.<br>
+          <strong>Direction artistique</strong> : identité visuelle et expérience utilisateur complètes.<br>
+          <strong>Validation</strong> : tests en conditions réelles (mobile, réseau faible) et corrections jusqu'à conformité.</p>
+        </div>
+      </div>
+      <div class="faq-item brackets">
+        <input type="checkbox" id="faq-4" class="faq-toggle" hidden>
+        <label for="faq-4" class="faq-question">Quelle est la différence entre vos projets phares, vos projets cadrés-réalisés-par-agent et vos démos ?</label>
+        <div class="faq-answer">
+          <p><strong>Projets phares</strong> (Stern Cosmétique, MonProgrammeFit) : implication forte de ma part, suivi complet.<br>
+          <strong>Projets avec intention</strong> (Prépa Concours Bénin, NukeMap EDU, Mock Interview Pro...) : cadrés et spécifiés par mes soins, réalisation technique par agent IA sous ma supervision.<br>
+          <strong>Démos techniques</strong> (W-Pendjari, Danhomè Voyages...) : démonstrateurs sans client, pour illustrer des mécaniques produit.</p>
+        </div>
+      </div>
+      <div class="faq-item brackets">
+        <input type="checkbox" id="faq-5" class="faq-toggle" hidden>
+        <label for="faq-5" class="faq-question">Comment garantissez-vous la qualité en contexte africain ?</label>
+        <div class="faq-answer">
+          <p>Chaque itération passe par une validation systématique en conditions réelles : comportement en réseau faible, ergonomie mobile, cas de chargement lent. Je corrige jusqu'à conformité complète. C'est ma signature qualité pour l'Afrique de l'Ouest.</p>
+        </div>
+      </div>
+      <div class="faq-item brackets">
+        <input type="checkbox" id="faq-6" class="faq-toggle" hidden>
+        <label for="faq-6" class="faq-question">Votre offre s'adresse-t-elle uniquement à des porteurs de projets techniques ?</label>
+        <div class="faq-answer">
+          <p>Non. Mon outil <strong>Trame</strong> permet de cadrer la demande avant le démarrage. Que vous soyez technique ou non, nous commençons par structurer votre besoin via Trame pour éviter les malentendus et clarifier ce que vous obtiendrez.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider wrap">
+
   <!-- ============================== TRAME CTA ============================== -->
   <section id="trame" class="wrap">
     <div class="trame reveal">
@@ -551,13 +656,13 @@
         <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.3-1.6 1.7-1.6h1.8V4.5c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.8V14h2.7v8h3Z"/></svg>
         <span>Facebook</span>
       </a></li>
+      <li><a href="/llms.txt">Contexte IA (llms.txt)</a></li>
     </ul>
     <div class="footer-meta">© 2026 Horacio Chinkoun — HG Prompt — Pahou, Bénin</div>
   </div>
 </footer>
 
 <script src="assets/js/main.js" defer></script>
-<script src="assets/js/i18n.js" defer></script>
 
 </body>
 </html>
