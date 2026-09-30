@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-hg-prompt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'No build step needed'"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
