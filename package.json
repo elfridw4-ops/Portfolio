@@ -9,6 +9,7 @@
     "build": "echo 'No build step needed'"
   },
   "dependencies": {
+    "compression": "^1.8.2",
     "express": "^4.19.2"
   }
 }

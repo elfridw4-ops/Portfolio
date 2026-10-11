@@ -371,6 +371,10 @@ section{ position:relative; z-index:1; padding:72px 0; }
   background:#080808;
   display:block;
 }
+.browser-screen picture{
+  display:contents;
+}
+.browser-screen picture img,
 .browser-screen img,
 .browser-screen iframe{
   position:absolute;
