@@ -269,9 +269,12 @@ section{ position:relative; z-index:1; padding:72px 0; }
 .tag-flagship{ color:var(--signal); border-color:rgba(214,179,106,0.5); background:rgba(214,179,106,0.08); }
 
 .flagship-grid{
-  display:grid; grid-template-columns:repeat(2, 1fr); gap:28px;
+  display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:24px;
 }
-@media (max-width:860px){
+@media (max-width:1080px){
+  .flagship-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); gap:22px; }
+}
+@media (max-width:720px){
   .flagship-grid{ grid-template-columns:1fr; gap:22px; }
 }
 

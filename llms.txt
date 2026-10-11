@@ -22,6 +22,7 @@ Ce site sert de vitrine de projets réels (réalisations et démos) et de point 
 ## Projets
 
 - [Stern Cosmétique](https://stern-cosm.vercel.app) : site e-commerce cosmétique — implication forte.
+- [Café Antoine](https://cafeantoine.vercel.app) : prototype et site de prospection proactive pour la cafétéria culte au Bénin (initiative personnelle, non un livrable commandé par le client final).
 - [MonProgrammeFit](https://monprogrammefit.vercel.app) : application de programme fitness — implication forte.
 - [Prépa Concours Bénin](https://prepa-concours-xi.vercel.app) : plateforme EdTech, tuteur IA socratique pour le Baccalauréat scientifique.
 - [NukeMap EDU](https://nukemap-3d.vercel.app) : simulateur scientifique pédagogique 3D.
